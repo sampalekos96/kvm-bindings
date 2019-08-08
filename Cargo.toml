@@ -13,3 +13,4 @@ kvm-v4_14_0 = []
 kvm-v4_20_0 = []
 
 [dependencies]
+serde = { version = "^1.0.27", features = ["derive"] }
