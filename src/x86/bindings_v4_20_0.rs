@@ -9123,7 +9123,7 @@ fn bindgen_test_layout_kvm_irqfd() {
     );
 }
 #[repr(C)]
-#[derive(Debug, Default, Copy, Clone, PartialEq)]
+#[derive(Debug, Default, Copy, Clone, PartialEq, Serialize, Deserialize)]
 pub struct kvm_clock_data {
     pub clock: __u64,
     pub flags: __u32,
