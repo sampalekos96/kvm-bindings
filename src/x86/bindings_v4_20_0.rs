@@ -3930,6 +3930,14 @@ fn bindgen_test_layout_kvm_debug_guest() {
         )
     );
 }
+
+#[repr(C)]
+pub struct kvm_vcpu_config {
+    pub id: __u32,
+    pub ngpas: __u32,
+    pub gpas: __IncompleteArrayField<__u64>,
+}
+
 #[repr(C)]
 #[derive(Debug, Default, Copy, Clone, PartialEq)]
 pub struct kvm_memory_region {
