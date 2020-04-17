@@ -3934,8 +3934,8 @@ fn bindgen_test_layout_kvm_debug_guest() {
 #[repr(C)]
 pub struct kvm_vcpu_config {
     pub id: __u32,
-    pub ngpas: __u32,
-    pub gpas: __IncompleteArrayField<__u64>,
+    pub ngfns: __u32,
+    pub gfns_to_pfns: __IncompleteArrayField<__u64>,
 }
 
 #[repr(C)]
