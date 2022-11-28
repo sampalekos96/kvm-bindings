@@ -16,6 +16,8 @@ mod arm;
 pub use self::arm::bindings::*;
 
 #[cfg(target_arch = "aarch64")]
-mod arm64;
+pub mod arm64;
 #[cfg(target_arch = "aarch64")]
 pub use self::arm64::bindings::*;
+#[cfg(target_arch = "aarch64")]
+pub mod fam;

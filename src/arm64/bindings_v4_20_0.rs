@@ -7356,7 +7356,7 @@ fn bindgen_test_layout_kvm_reg_list() {
     );
 }
 #[repr(C)]
-#[derive(Debug, Default, Copy, Clone, PartialEq)]
+#[derive(Debug, Default, Copy, Clone, PartialEq, Serialize, Deserialize)]
 pub struct kvm_one_reg {
     pub id: __u64,
     pub addr: __u64,
